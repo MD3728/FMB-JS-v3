@@ -445,9 +445,9 @@ class ModifyQuestion extends Component {
                 Database
               </a>
               <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a className="dropdown-item" href="/modifyAccount">Edit Accounts</a></li>
-                <li><a className="dropdown-item" href="/modifyTest">Edit Tests</a></li>
-                <li><a className="dropdown-item" href="/modifyQuestion">Edit Questions</a></li>
+                <li><a className="dropdown-item" href="/modify_account">Edit Accounts</a></li>
+                <li><a className="dropdown-item" href="/modify_test">Edit Tests</a></li>
+                <li><a className="dropdown-item" href="/modify_question">Edit Questions</a></li>
               </ul>
             </li>
             <li id = "logOutNav" className = "nav-item">
@@ -462,10 +462,10 @@ class ModifyQuestion extends Component {
 
         </div>  
         <div id = "biggerDiv" className = "col-sm-8 middleSection align-items-center justify-content-center">    
-          {/* Decoration */}
-          <p id = "currentEntryTag">Current Question:</p>
           {/* Inputs */}
-          <div id = "inputDiv">
+          <div id = "inputDiv" className='standardBox'>
+             {/* Decoration */}
+            <p id = "currentEntryTag">Current Question:</p>
             <p id = "questionIdTag">Question ID:</p>
             <p id = "typeTag">Type:</p>
             <p id = "questionTag">Question:</p>
@@ -538,13 +538,15 @@ class ModifyQuestion extends Component {
             </div>
           </div>
           {/* Instructions */}
-          <h1 id = "instructionText">
-            <strong>Instructions:</strong><br />
-            Use This Page To Change Question Data <br />
-            "Save" Saves Changes On Current Entry <br />
-            "New" Creates Template Question At End <br />
-            "Delete" Deletes Current Entry <br />
-          </h1>
+          <div id = "instructionDiv" className='standardBox'>
+            <h1 id = "instructionText">
+              <strong>Instructions:</strong><br />
+              Use This Page To Change Question Data <br />
+              "Save" Saves Changes On Current Entry <br />
+              "New" Creates Template Question At End <br />
+              "Delete" Deletes Current Entry <br />
+            </h1>
+          </div>
           {/* Buttons */}
           <div id = "buttonDiv">
             <input type = "submit" id="updateQuestion" value = "Save" onClick = {() => this.updateQuestion()} />

@@ -300,8 +300,8 @@ class TestPage extends Component {
         </div>  
         <div id = "biggerDiv" className = "col-sm-10 middleSection align-items-center justify-content-center">    
           <h6 id = "testNameDisplay">You Are Now Taking</h6>
-          <div id = "questionDisplay"></div>
-          <div id = "answerChoices">
+          <div id = "questionDisplay" className='standardBox'></div>
+          <div id = "answerChoices" className='standardBox'>
             <canvas id = "answerDisplay" width = "700px" height = "400px"></canvas>
             <input type = "radio" id = "A" name = "m" onClick = {() => {this.updateAnswer('A')}} />
             <input type = "radio" id = "B" name = "m" onClick = {() => {this.updateAnswer('B')}} />
@@ -316,9 +316,11 @@ class TestPage extends Component {
             <input type = "checkbox" id = "e" onClick = {() => {this.updateAnswer('e')}} />
             <input type = "checkbox" id = "f" onClick = {() => {this.updateAnswer('f')}} />
             <textarea id = "response" rows = "7" cols = "55"></textarea>
-          </div>
-          <input type = "submit" name = "Next" id = "next" value = "Next" onClick = {() => {this.changeQuestion(1)}} />
+            {/* Navigation Buttons */}
+            <input type = "submit" name = "Next" id = "next" value = "Next" onClick = {() => {this.changeQuestion(1)}} />
           <input type = "submit" name = "Back" id = "back" value = "Back" onClick = {() => {this.changeQuestion(-1)}} />
+          </div>
+
           {/* <!-- Takes You to Grade --> */}
           <input type = "hidden" id = "answers" name = "answers" /> 
           <input type = "submit" name = "Start" id="submitTest" value = "Submit" onClick = {() => {this.grade()}} />

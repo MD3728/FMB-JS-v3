@@ -35,18 +35,31 @@
   position: relative;
   top: 0px;
   left: 0px;
-  outline: 2px solid black;
+}
+
+#testDiv{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  width: 90%;
+  height: 95%;
 }
 
 #biggerDiv{
   position: relative;
   top: 0px;
   left: 0px;
-  outline: 2px solid black;
+}
+
+#questionDiv{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  width: 90%;
+  height: 95%;
 }
 
 .middleSection{
-  background-color: rgba(100,100,100,0.15);
   height: 85vh;
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
@@ -136,8 +149,8 @@ input[type="submit"]{
 /* Query Buttons */
 #updateQuestion{
   position:absolute; 
-  top:600px; 
-  left:150px;
+  top:500px; 
+  left:420px;
 }
 
 #newQuestion{

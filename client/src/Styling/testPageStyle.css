@@ -30,11 +30,9 @@ input[type="submit"]{
 }
 
 .middleSection{
-  background-color: rgba(100,100,100,0.15);
   height: 85vh;
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
-  outline: 5px solid black;
 }
 
 #generalDiv{
@@ -55,13 +53,12 @@ input[type="submit"]{
 }
 
 #answerChoices{
-  position:relative;
-  top: 27%;
+  position:absolute;
+  top: 35%;
   left:10%;
   width:80%;
-  height:50%;
-  background-color: rgba(255, 255, 255, 0.6);
-  outline: 5px solid black;
+  height:60%;
+  border: 6px solid black;
 }
 
 #questionDisplay{
@@ -69,8 +66,8 @@ input[type="submit"]{
   top: 15%; 
   left: 10%;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.6);
-  outline: 5px solid black;
+  background-color: rgba(245, 245, 245, 0.6);
+  border: 6px solid black;
 }
 
 #answerDisplay{
@@ -81,55 +78,55 @@ input[type="submit"]{
 
 #next{
   position:absolute; 
-  top:90%; 
+  top:85%; 
   left:60%;
 }
 
 #back{
   position:absolute; 
-  top:90%; 
+  top:85%; 
   left:30%;
 }  
 
 /* Multiple Choice */
 #A{
   position:absolute; 
-  top:20px; 
+  top:23px; 
   left:100px;
   display:none;
 }
 
 #B{
   position:absolute; 
-  top:70px; 
+  top:73px; 
   left:100px;
   display:none;
 }
 
 #C{
   position:absolute; 
-  top:120px; 
+  top:123px; 
   left:100px;
   display:none;
 }
 
 #D{
   position:absolute; 
-  top:170px; 
+  top:173px; 
   left:100px;
   display:none;
 }
 
 #E{
   position:absolute; 
-  top:220px; 
+  top:223px; 
   left:100px;
   display:none;
 }
 
 #F{
   position:absolute; 
-  top:270px; 
+  top:273px; 
   left:100px;
   display:none;
 }
@@ -137,42 +134,42 @@ input[type="submit"]{
 /* Multiple Select */
 #a{
   position:absolute; 
-  top:20px; 
+  top:23px; 
   left:100px;
   display:none;
 }
 
 #b{
   position:absolute; 
-  top:70px; 
+  top:73px; 
   left:100px;
   display:none;
 }
 
 #c{
   position:absolute; 
-  top:120px; 
+  top:123px; 
   left:100px;
   display:none;
 }
 
 #d{
   position:absolute; 
-  top:170px; 
+  top:173px; 
   left:100px;
   display:none;
 }
 
 #e{
   position:absolute; 
-  top:220px; 
+  top:223px; 
   left:100px;
   display:none;
 }
 
 #f{
   position:absolute; 
-  top:270px; 
+  top:273px; 
   left:100px;
   display:none;
 }
@@ -181,7 +178,10 @@ input[type="submit"]{
 #response{
   position:absolute; 
   top:20px; 
-  left:50px;
+  left:50%;
+  width:60%;
+  height:65%;
+  margin-left: -30%;
   display: none;
   resize: none;
 }

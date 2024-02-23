@@ -35,23 +35,42 @@ input[type="submit"]{
 }
 
 .middleSection{
-  background-color: rgba(100,100,100,0.15);
   height: 85vh;
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
-  border: 5px solid black;
 }
 
+/* ? */
 #generalDiv{
   height: 85vh;
   position: relative; 
 }
 
+/* Central Div */
 #biggerDiv{
   position: relative;
   top: 0px;
   left: 0px;
 }
+
+/* Left Side */
+#editingDiv{
+  position: absolute;
+  top:3%;
+  left: 0%;
+  width:60%;
+  height: 100%;
+}
+
+/* Right Side */
+#instructionsDiv{
+  position: absolute;
+  top:15%;
+  left: 65%;
+  width:35%;
+  height: 70%;
+}
+
 /* Edit Inputs/Display */
 #idBox{
   position:absolute; 
@@ -188,7 +207,6 @@ input[type="submit"]{
 /* Other */
 #instructionText{
   position:absolute;
-  top:100px; 
-  left:500px;
+  margin: 5%;
   font-size: 20px;
 }

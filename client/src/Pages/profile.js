@@ -158,9 +158,9 @@ class Profile extends Component {
                   Database
                 </a>
                 <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a className="dropdown-item" href="/modifyAccount">Edit Accounts</a></li>
-                  <li><a className="dropdown-item" href="/modifyTest">Edit Tests</a></li>
-                  <li><a className="dropdown-item" href="/modifyQuestion">Edit Questions</a></li>
+                  <li><a className="dropdown-item" href="/modify_account">Edit Accounts</a></li>
+                  <li><a className="dropdown-item" href="/modify_test">Edit Tests</a></li>
+                  <li><a className="dropdown-item" href="/modify_question">Edit Questions</a></li>
                 </ul>
               </li>
               <li id = "logOutNav" className = "nav-item">

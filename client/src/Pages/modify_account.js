@@ -186,9 +186,9 @@ class ModifyAccount extends Component {
                 Database
               </a>
               <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a className="dropdown-item" href="/modifyAccount">Edit Accounts</a></li>
-                <li><a className="dropdown-item" href="/modifyTest">Edit Tests</a></li>
-                <li><a className="dropdown-item" href="/modifyQuestion">Edit Questions</a></li>
+                <li><a className="dropdown-item" href="/modify_account">Edit Accounts</a></li>
+                <li><a className="dropdown-item" href="/modify_test">Edit Tests</a></li>
+                <li><a className="dropdown-item" href="/modify_question">Edit Questions</a></li>
               </ul>
             </li>
             <li id = "logOutNav" className = "nav-item">
@@ -203,52 +203,56 @@ class ModifyAccount extends Component {
 
         </div>  
         <div id = "biggerDiv" className = "col-sm-8 middleSection align-items-center justify-content-center">    
-          {/* Decoration */}
-          <p id = "currentEntryTag">Current Account:</p>
-          {/* Inputs */}
-          <div id = "inputDiv">
-            <p id = "idTag">Account ID:</p>
-            <p id = "usernameTag">Username:</p>
-            <p id = "passwordTag">Password:</p>
-            <p id = "testTag">Assigned Tests:</p>
-            <p id = "typeTag">Account Type:</p>
-            <input type = "text" id = "idBox" name = "idBox" disabled = {true} />
-            <input type = "text" id = "usernameBox" name = "usernameBox" />
-            <input type = "text" id = "passwordBox" name = "passwordBox" />
-            <input type = "text" id = "testBox" name = "testBox" />
-            <label id = "adminTypeLabel">
-              <input type = "radio" id = "adminTypeButton" name = "typeSelect"  value = "adminTypeButton" /> Administrator
-            </label>
-            <label id = "teacherTypeLabel">
-              <input type = "radio" id = "teacherTypeButton" name = "typeSelect" /> Teacher
-            </label>
-            <label id = "studentTypeLabel">
-              <input type = "radio" id = "studentTypeButton" name = "typeSelect" /> Student
-            </label>
+          <div id = "editingDiv" className = "standardBox">
+            {/* Buttons */}
+            <div id = "buttonDiv">
+              <input type = "submit" id = "updateAccount" value = "Save" onClick = {() => this.updateAccount()} />
+              <input type = "submit" id = "newAccount" value = "New" onClick = {() => this.newAccount()} />
+              <input type = "submit" id = "deleteAccount" value = "Delete" onClick = {() => this.deleteAccount()} />
+              <input type = "submit" id = "next" value = "Next" onClick = {() => this.switchAccount(1)} />
+              <input type = "submit" id = "back" value = "Back" onClick = {() => this.switchAccount(-1)} />
+              {/* <input type = "submit" id = "changeTest" value = "Add/Remove Test" onClick = {() => this.changeTest()} /> */}
+            </div>
+            <div id = "confirmAddDiv">
+              <input type = "submit" id = "addAccount" value = "Add" onClick = {() => this.addAccount()} />
+              <input type = "submit" id = "cancelAdd" value = "Cancel" onClick = {() => this.cancelAdd()} />
+            </div>
+            {/* Decoration */}
+            <p id = "currentEntryTag">Current Account:</p>
+            {/* Inputs */}
+            <div id = "inputDiv">
+              <p id = "idTag">Account ID:</p>
+              <p id = "usernameTag">Username:</p>
+              <p id = "passwordTag">Password:</p>
+              <p id = "testTag">Assigned Tests:</p>
+              <p id = "typeTag">Account Type:</p>
+              <input type = "text" id = "idBox" name = "idBox" disabled = {true} />
+              <input type = "text" id = "usernameBox" name = "usernameBox" />
+              <input type = "text" id = "passwordBox" name = "passwordBox" />
+              <input type = "text" id = "testBox" name = "testBox" />
+              <label id = "adminTypeLabel">
+                <input type = "radio" id = "adminTypeButton" name = "typeSelect"  value = "adminTypeButton" /> Administrator
+              </label>
+              <label id = "teacherTypeLabel">
+                <input type = "radio" id = "teacherTypeButton" name = "typeSelect" /> Teacher
+              </label>
+              <label id = "studentTypeLabel">
+                <input type = "radio" id = "studentTypeButton" name = "typeSelect" /> Student
+              </label>
+            </div>
           </div>
-          {/* <div id = "addTestDiv">  </div> */}
-          {/* Buttons */}
-          <div id = "buttonDiv">
-            <input type = "submit" id = "updateAccount" value = "Save" onClick = {() => this.updateAccount()} />
-            <input type = "submit" id = "newAccount" value = "New" onClick = {() => this.newAccount()} />
-            <input type = "submit" id = "deleteAccount" value = "Delete" onClick = {() => this.deleteAccount()} />
-            <input type = "submit" id = "next" value = "Next" onClick = {() => this.switchAccount(1)} />
-            <input type = "submit" id = "back" value = "Back" onClick = {() => this.switchAccount(-1)} />
-            {/* <input type = "submit" id = "changeTest" value = "Add/Remove Test" onClick = {() => this.changeTest()} /> */}
-          </div>
-          <div id = "confirmAddDiv">
-            <input type = "submit" id = "addAccount" value = "Add" onClick = {() => this.addAccount()} />
-            <input type = "submit" id = "cancelAdd" value = "Cancel" onClick = {() => this.cancelAdd()} />
-          </div>
+
           {/* Instructions */}
-          <h1 id = "instructionText">
-            <strong>Instructions:</strong><br />
-            Use This Page To Change Account Data <br />
-            "Save" Saves Changes On Current Entry <br />
-            "New" Creates Template Account At End <br />
-            "Delete" Deletes Current Entry <br />
-            <strong>To add an assigned test, format the input to look like "testID:testID:testID" where testID is the numerical ID of the test <br /></strong>
-          </h1>
+          <div id = "instructionsDiv" className='standardBox'>
+            <h1 id = "instructionText">
+              <strong>Instructions:</strong><br />
+              Use This Page To Change Account Data <br />
+              "Save" Saves Changes On Current Entry <br />
+              "New" Creates Template Account At End <br />
+              "Delete" Deletes Current Entry <br />
+              <strong>To add an assigned test, format the input to look like "testID:testID:testID" where testID is the numerical ID of the test <br /></strong>
+            </h1>
+          </div>
         </div>
         <div className = "col-sm-2">   
 

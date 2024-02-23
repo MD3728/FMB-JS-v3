@@ -5,11 +5,9 @@ input[type="submit"]{
 }
 
 .middleSection{
-  background-color: rgba(100,100,100,0.15);
   height: 85vh;
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
-  outline: 5px solid black;
 }
 
 #generalDiv{
@@ -54,10 +52,27 @@ input[type="submit"]{
   left: 0px;
 }
 
+#inputDiv{
+  position: absolute;
+  top: 5%;
+  left: -5%;
+  width: 70%;
+  height: 95%;
+  z-index: 0;
+}
+
+#instructionDiv{
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  width: 36%;
+  height: 95%;
+  z-index: 0;
+}
+
 #instructionText{
   position:absolute;
-  top:50px; 
-  left:550px;
+  margin: 5%;
   font-size: 20px;
 }
 
@@ -72,13 +87,13 @@ input[type="submit"]{
 
 #addQuestion{
   position: absolute;
-  top:500px; 
+  top:550px; 
   left:200px;
 }
 
 #cancelAdd{
   position: absolute;
-  top:500px; 
+  top:550px; 
   left:330px;
 }
 
@@ -134,31 +149,31 @@ input[type="submit"]{
 /* Query Buttons */
 #updateQuestion{
   position:absolute; 
-  top:600px; 
-  left:200px;
+  top:550px; 
+  left:460px;
 }
 
 #newQuestion{
   position:absolute; 
-  top:550px; 
+  top:600px; 
   left:200px;
 }
 
 #deleteQuestion{
   position:absolute; 
-  top:550px; 
+  top:600px; 
   left:330px;
 }
 
 #next{
   position:absolute; 
-  top:500px; 
+  top:550px; 
   left:330px;
 }
 
 #back{
   position:absolute; 
-  top:500px; 
+  top:550px; 
   left:200px;
 }
 

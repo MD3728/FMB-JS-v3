@@ -30,7 +30,6 @@ function checkLoginStatus(){
     document.location.href = 'http://localhost:3000/login';
   }
   //Check profile type
-
 }
 
 class ModifyTest extends Component {
@@ -556,9 +555,9 @@ class ModifyTest extends Component {
                 Database
               </a>
               <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a className="dropdown-item" href="/modifyAccount">Edit Accounts</a></li>
-                <li><a className="dropdown-item" href="/modifyTest">Edit Tests</a></li>
-                <li><a className="dropdown-item" href="/modifyQuestion">Edit Questions</a></li>
+                <li><a className="dropdown-item" href="/modify_account">Edit Accounts</a></li>
+                <li><a className="dropdown-item" href="/modify_test">Edit Tests</a></li>
+                <li><a className="dropdown-item" href="/modify_question">Edit Questions</a></li>
               </ul>
             </li>
             <li id = "logOutNav" className = "nav-item">
@@ -572,10 +571,10 @@ class ModifyTest extends Component {
         <div className = "col-sm-1">        
 
         </div>  
-        <div id = "smallerDiv" className = "col-sm-3 middleSection align-items-center justify-content-center">    
+        <div id = "smallerDiv" className = "col-sm-4 middleSection align-items-center justify-content-center">    
           {/* Decoration */}
-          <p id = "currentTestTag">Current Test:</p>
-          <div id = "testDiv">
+          <div id = "testDiv" className = "standardBox">
+            <p id = "currentTestTag">Current Test:</p>
             <input type = "text" id = "testIDBox" name = "idBox" disabled = {true} />
             <input type = "text" id = "testNameBox" name = "nameBox" />
             <input type = "text" id = "testQuestionBox" name = "questionBox" disabled = {true} />
@@ -597,8 +596,8 @@ class ModifyTest extends Component {
             </h1>
           </div>
         </div>
-        <div id = "biggerDiv" className = "col-sm-7 middleSection align-items-center justify-content-center">
-          <div id = "questionDiv">
+        <div id = "biggerDiv" className = "col-sm-6 middleSection align-items-center justify-content-center">
+          <div id = "questionDiv" className='standardBox'>
           <p id = "currentTestTag">Test Question:</p>
             {/* Inputs */}
             <div id = "inputDiv">
