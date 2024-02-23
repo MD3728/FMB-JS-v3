@@ -1,18 +1,36 @@
-/* For All Files */
+/* For All Files, General Uniform Styling */
+
+/* All standard texts */
 h6 {
   text-align: center;
   font-size: 20px;
 }
 
+/* Background */
 body{
   background-color: #e7e6e6;
 }
 
+/* All buttons/inputs */
 input{
   border-radius: 5px;
   border: 0.8px black solid;
+  font-family: 'Courier New', Courier, monospace;
 }
 
+/* Button hover over color */
+input[type=submit]:hover {
+  background-color: #ddd;
+}
+
+/* Extension of abofve */
+button{
+  border-radius: 5px;
+  border: 0.8px black solid;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Teal background box */
 .standardBox{
   z-index: 2; 
   position: relative; 

@@ -171,29 +171,34 @@ class Profile extends Component {
         </nav>
         {/* User Interface */}
         <div id = "generalDiv" className = "row">
+          <h6 id = "welcomeText">Welcome</h6>    
           <div className = "col-sm-2">        
 
           </div>  
+          {/* Test Information (Left) */}
           <div id = "testInfoDiv" className = "col-sm-4 middleSection align-items-center justify-content-center">        
-            <h6 id = "welcomeText">Welcome</h6>    
-            <div id = "testSelectDiv">
-              <input type = "submit" name = "Next" id = "next" value = "Next" onClick = {() => {this.changeTest(1)}}/>
-              <input type = "submit" name = "Back" id = "back" value = "Back" onClick = {() => {this.changeTest(-1)}}/>
+            <div id = "testSelectDiv" className='standardBox'>
+              <div id = "navigationButtons">
+                <input type = "submit" name = "Next" id = "next" value = "Next" onClick = {() => {this.changeTest(1)}}/>
+                <input type = "submit" name = "Back" id = "back" value = "Back" onClick = {() => {this.changeTest(-1)}}/>
+              </div>
               <p id = "selectTestText">Select A Test <br /> To Take:</p>
               <div id = "testNameDisplay"></div>
               <input type = "submit" name = "Start" id = "takeTest" value = "Take Test" onClick = {this.takeTest}/>
             </div>
           </div>    
+
+          {/* Administrative Information (Right) */}
           <div id = "managementInfoDiv" className = "col-sm-4 middleSection align-items-center justify-content-center">  
-            <div id = "managementOptionDiv">
+            <div id = "managementOptionDiv" className='standardBox'>
               <h6 id = "adminText">Administrative Tools</h6> 
-              <form action = "http://localhost:3000/modifyAccount">
+              <form action = "http://localhost:3000/modify_account">
                 <input type = "submit" id = "modifyAccount" value = "Modify Accounts"/> 
               </form>
-              <form action = "http://localhost:3000/modifyTest">
+              <form action = "http://localhost:3000/modify_test">
                 <input type = "submit" id = "modifyTest" value = "Modify Tests"/> 
               </form>
-              <form action = "http://localhost:3000/modifyQuestion">
+              <form action = "http://localhost:3000/modify_question">
                 <input type = "submit" id = "modifyQuestion" value = "Modify Questions"/> 
               </form> 
             </div>

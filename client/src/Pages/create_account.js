@@ -26,9 +26,9 @@ class CreateAccount extends Component{
   
   //Create New Account
   addNewAccount = async (e) => {
-    let givenUsername = document.getElementById("usernameCreate").value;
-    let givenPassword = document.getElementById("passwordCreate").value;
-    let givenConfirm = document.getElementById("passwordConfirmCreate").value;
+    let givenUsername = document.getElementById("usernameInput").value;
+    let givenPassword = document.getElementById("passwordInput").value;
+    let givenConfirm = document.getElementById("confirmPasswordInput").value;
     //Check Password
     if ((givenPassword !== givenConfirm)||(givenPassword.length === 0)){
       document.getElementById("passwordWarning").style.display = "block";
@@ -48,8 +48,10 @@ class CreateAccount extends Component{
         return 2;
       }
     }
-    if (window.confirm("Do You Want To Create This Account?")){//Verification
-      let sqlQuery = `INSERT INTO Accounts (Username, Password, Tests) VALUES ('${document.getElementById("usernameCreate").value}','${document.getElementById("passwordCreate").value}','');`
+
+    //Verification
+    if (window.confirm("Do You Want To Create This Account?")){
+      let sqlQuery = `INSERT INTO Accounts (Username, Password, Tests) VALUES ('${document.getElementById("usernameInput").value}','${document.getElementById("passwordInput").value}','');`
       e.preventDefault();
       fetch("http://localhost:3001/queryCommand", {
         method: "POST",
@@ -62,6 +64,7 @@ class CreateAccount extends Component{
     }
   }
 
+  // Render HTML Page
   render() {
     return (
     <div>
@@ -84,16 +87,27 @@ class CreateAccount extends Component{
 
         </div>      
         <div id = "mainInfoDiv" className = "col-sm-8 middleSection align-items-center justify-content-center">  
-          <div id = "createDiv">
+          <div id = "createDiv" className = "standardBox">
+            {/* Possible Messages */}
+            <h1 id = "createAccountText">Create Account</h1>
             <p id = "usernameWarning">Username already exists, Use a different one</p>
             <p id = "passwordWarning">Passwords do not match or Type in a password</p>
-            <h1 id = "createAccountText">Create Account</h1>
-            <p id = "createUsernameText">Username:</p>
-            <p id = "createPasswordText">Password:</p>
-            <p id = "createConfirmPasswordText">Confirm Password:</p>
-            <input type = "text" name = "newUsername" id = "usernameCreate" onChange = {this.changeTextBox} />
-            <input type = "password" name = "newPassword" id = "passwordCreate" onChange = {this.changeTextBox} />
-            <input type = "password" name = "newConfirmPassword" id = "passwordConfirmCreate" onChange = {this.changeTextBox} />
+
+            {/* Text Boxes */}
+            <div id = "loginInputs">
+              <div id = "usernameInputs">
+                <p id = "usernameText">Username:</p>
+                <input type = "text" name = "username" id = "usernameInput" onChange = {this.changeTextBox} />
+              </div>
+              <div id = "passwordInputs">
+                <p id = "passwordText">Password:</p>
+                <input type = "password" name = "password" id = "passwordInput" onChange = {this.changeTextBox} />
+              </div>
+              <div id = "confirmPasswordInputs">
+                <p id = "confirmPasswordText">Confirm Password:</p>
+                <input type = "password" name = "confirmPassword" id = "confirmPasswordInput" onChange = {this.changeTextBox} />
+              </div>          
+            </div>
             <input type = "submit" name = "create" id = "createButton" value = "Create Account" onClick = {this.addNewAccount} />
           </div>
         </div>
