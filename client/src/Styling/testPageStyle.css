@@ -3,20 +3,23 @@
 /* Navigation Bar */
 #homeNav{
   position: absolute;
-  left: 25%;
-  border: 5px solid white;
+  left: 23%;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #profileNav{
   position: absolute;
-  left: 50%;
-  border: 5px solid white;
+  left: 48%;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #logOutNav{/*Must keep at least one element relative */
   position: relative;
-  left:76%;
-  border: 5px solid white;
+  left:75%;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #generalNav{

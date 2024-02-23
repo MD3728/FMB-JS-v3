@@ -19,25 +19,29 @@ input[type="submit"]{
 #homeNav{
   position: absolute;
   left: 15%;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #profileNav{
   position: absolute;
   left: 36%;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #editNav{
   position: absolute;
   left: 55%;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #logOutNav{/*Must keep at least one element relative */
   position: relative;
   left:76%;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #generalNav{

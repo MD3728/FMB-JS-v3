@@ -81,9 +81,6 @@ class Login extends Component {
             <li id = "loginNav" className = "nav-item">
               <input type = "submit" className = "btn text-light nav-link btn-dark" value = "Login" onClick = {() => {this.goToLogin()}}/>
             </li>
-            <li id = "textNav" className = "nav-item">
-              <label value = "FMB v3.0" />
-            </li>
           </ul>
         </div>
       </nav>
@@ -121,12 +118,9 @@ class Login extends Component {
       {/* Footer */}
       <nav className="navbar navbar-expand-sm bg-dark" id = "footerContainer">
         <div className="container-fluid">
-          <ul className="navbar-nav" id = "generalNav">
-            <li id = "textNav" className = "nav-item">
-              <label value = "Test Label" className = "titleBUtton"/>
-            </li>
-            <li id = "textNav" className = "nav-item">
-              <label value = "Test Label" className = "titleBUtton"/>
+          <ul className="navbar-nav" id = "bottomNav">
+            <li className = "nav-item">
+              <label id = "footerNote">FMB JS v.3.0.0</label>
             </li>
           </ul>
         </div>

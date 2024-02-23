@@ -253,13 +253,23 @@ class ModifyAccount extends Component {
               <strong>To add an assigned test, format the input to look like "testID:testID:testID" where testID is the numerical ID of the test <br /></strong>
             </h1>
           </div>
+
         </div>
         <div className = "col-sm-2">   
 
         </div>
-        {/* Other */}
-
+      {/* Footer */}
+      <nav className="navbar navbar-expand-sm bg-dark" id = "footerContainer">
+        <div className="container-fluid">
+          <ul className="navbar-nav" id = "bottomNav">
+            <li className = "nav-item">
+              <label id = "footerNote">FMB JS v.3.0.0</label>
+            </li>
+          </ul>
+        </div>
+      </nav>
       </div>
+
     </div>
     );
   }

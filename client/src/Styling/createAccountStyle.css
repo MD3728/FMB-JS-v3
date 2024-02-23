@@ -4,13 +4,15 @@
 #homeNav{
   position: relative;
   left: 25%;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #loginNav{
   position: relative;
   left: 70%;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 #generalNav{
@@ -26,6 +28,7 @@
 }
 
 #generalDiv{
+  height:100vh;
   top:15%;
   position:relative; 
 }

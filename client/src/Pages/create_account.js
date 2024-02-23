@@ -114,6 +114,16 @@ class CreateAccount extends Component{
         <div className = "col-sm-2">   
 
         </div>
+        {/* Footer */}
+        <nav className="navbar navbar-expand-sm bg-dark" id = "footerContainer">
+          <div className="container-fluid">
+            <ul className="navbar-nav" id = "bottomNav">
+              <li className = "nav-item">
+                <label id = "footerNote">FMB JS v.3.0.0</label>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
 {/* npm run build
 npm install -g serve

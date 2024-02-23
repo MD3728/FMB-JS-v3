@@ -1,6 +1,6 @@
 /* For login.js */
 /* Navigation Bar */
-#homeNav{
+/* #homeNav{
   position: relative;
   left: 0%;
   margin-left:0;
@@ -16,13 +16,32 @@
   left: 100%;
   width: 70px;
   margin-left: -70px;
-}
+} */
 
-#generalNav{
+/* #generalNav{
   position: relative;
   width:100%;
   justify-content: space-between;
   display: flex;
+} */
+
+#generalNav{
+  position: relative;
+  width:100%;
+}
+
+#homeNav{
+  position: relative;
+  left: 25%;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+#loginNav{
+  position: relative;
+  left: 70%;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 /* General Looks */
