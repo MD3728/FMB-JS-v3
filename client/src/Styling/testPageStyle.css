@@ -1,0 +1,196 @@
+/* Styling For Testing Page (testPage.js) */
+
+/* Navigation Bar */
+#homeNav{
+  position: absolute;
+  left: 25%;
+  border: 5px solid white;
+}
+
+#profileNav{
+  position: absolute;
+  left: 50%;
+  border: 5px solid white;
+}
+
+#logOutNav{/*Must keep at least one element relative */
+  position: relative;
+  left:76%;
+  border: 5px solid white;
+}
+
+#generalNav{
+  position: relative;
+  width:100%;
+}
+
+/* General Styling */
+input[type="submit"]{
+  width: 100px;
+}
+
+.middleSection{
+  background-color: rgba(100,100,100,0.15);
+  height: 85vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  outline: 5px solid black;
+}
+
+#generalDiv{
+  height: 100vh;
+  position:relative; 
+}
+
+#biggerDiv{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/* Test Navigation and Display */
+#testNameDisplay{
+  font-size:25px;
+  font-weight: bold;
+}
+
+#answerChoices{
+  position:relative;
+  top: 27%;
+  left:10%;
+  width:80%;
+  height:50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 5px solid black;
+}
+
+#questionDisplay{
+  position:absolute; 
+  top: 15%; 
+  left: 10%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 5px solid black;
+}
+
+#answerDisplay{
+  position:absolute; 
+  top:0px; 
+  left:0px;
+}
+
+#next{
+  position:absolute; 
+  top:90%; 
+  left:60%;
+}
+
+#back{
+  position:absolute; 
+  top:90%; 
+  left:30%;
+}  
+
+/* Multiple Choice */
+#A{
+  position:absolute; 
+  top:20px; 
+  left:100px;
+  display:none;
+}
+
+#B{
+  position:absolute; 
+  top:70px; 
+  left:100px;
+  display:none;
+}
+
+#C{
+  position:absolute; 
+  top:120px; 
+  left:100px;
+  display:none;
+}
+
+#D{
+  position:absolute; 
+  top:170px; 
+  left:100px;
+  display:none;
+}
+
+#E{
+  position:absolute; 
+  top:220px; 
+  left:100px;
+  display:none;
+}
+
+#F{
+  position:absolute; 
+  top:270px; 
+  left:100px;
+  display:none;
+}
+
+/* Multiple Select */
+#a{
+  position:absolute; 
+  top:20px; 
+  left:100px;
+  display:none;
+}
+
+#b{
+  position:absolute; 
+  top:70px; 
+  left:100px;
+  display:none;
+}
+
+#c{
+  position:absolute; 
+  top:120px; 
+  left:100px;
+  display:none;
+}
+
+#d{
+  position:absolute; 
+  top:170px; 
+  left:100px;
+  display:none;
+}
+
+#e{
+  position:absolute; 
+  top:220px; 
+  left:100px;
+  display:none;
+}
+
+#f{
+  position:absolute; 
+  top:270px; 
+  left:100px;
+  display:none;
+}
+
+/* Free Response */
+#response{
+  position:absolute; 
+  top:20px; 
+  left:50px;
+  display: none;
+  resize: none;
+}
+
+/* Submit */
+#submitTest{
+  position:absolute; 
+  top:50px; 
+  left:75%;
+}
+
+

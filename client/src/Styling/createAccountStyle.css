@@ -1,0 +1,127 @@
+/* For Create Account Page (createAccount.js) */
+
+/* Navigation Bar */
+#homeNav{
+  position: relative;
+  left: 25%;
+  border: 5px solid white;
+}
+
+#loginNav{
+  position: relative;
+  left: 70%;
+  border: 5px solid white;
+}
+
+#generalNav{
+  position: relative;
+  width:100%;
+}
+
+/* General Looks */
+.middleSection{
+  background-color: rgba(100,100,100,0.15);
+  height: 85vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+#generalDiv{
+  top:15%;
+  position:relative; 
+}
+
+#mainInfoDiv{
+  text-align: center;
+  outline: 5px solid black;
+}
+
+#homepageText{
+  position: relative; 
+  top: 20px; 
+  left: 50px;
+}
+
+/* Create Div */
+#createDiv{
+  position: relative;
+  background-color: rgba(201, 235, 223, 0.3);
+  outline: 3px solid black;
+  width: 70%;
+  height: 60%;
+  left: 15%;
+  top: 15%;
+}
+
+#createButton{
+  position:absolute; 
+  top:350px; 
+  left:40%;
+}
+
+/* Buttons */
+#usernameCreate{
+  position:absolute; 
+  top:180px; 
+  left:270px;
+  width: 150px;
+}
+
+#passwordCreate{
+  position:absolute; 
+  top:230px; 
+  left:270px;
+  width: 150px;
+}
+
+#passwordConfirmCreate{
+  position:absolute; 
+  top:280px; 
+  left:270px;
+  width: 150px;
+}
+
+/* Text */
+#createAccountText{
+  font-weight:600;
+}
+
+#usernameWarning{
+  position: absolute;
+  font-size: 16px;
+  color: red;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+  display: none;
+}
+
+#passwordWarning{
+  position: absolute;
+  font-size: 16px;
+  color: red;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+  display: none;
+}
+
+#createUsernameText{
+  position:absolute; 
+  top:180px; 
+  left:70px;
+}
+
+#createPasswordText{
+  position:absolute; 
+  top:230px; 
+  left:70px;
+}
+
+#createConfirmPasswordText{
+  position:absolute; 
+  top:280px; 
+  left:70px;
+}
+
+

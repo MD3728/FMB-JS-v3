@@ -1,0 +1,73 @@
+/* For home.js */
+
+.middleSection{
+  background-color: rgba(100,100,100,0.15);
+  height: 85vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+#homeNav{
+  position: relative;
+  left: 25%;
+  border: 5px solid white;
+}
+
+#loginNav{
+  position: relative;
+  left: 70%;
+  border: 5px solid white;
+}
+
+#generalNav{
+  position: relative;
+  width:100%;
+}
+
+#mainInfoDiv{
+  top: 15%;
+}
+
+#recentUpdateText{
+  position: relative;
+  top: 35%;
+  width: 100%;
+  border: 5px solid black;
+  background-color: rgba(201, 235, 223, 0.3);
+}
+
+#optionLogin{
+  text-align: center;
+  top: -15%;
+  position:relative;
+}
+
+#loginButton{
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: -10%;
+}
+
+#createAccountButton{
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 0%;
+}
+
+#descriptionText{
+  position: relative;
+  text-align: center;
+  top: 10%;
+  width: 100%;
+}
+
+#inBetweenText{
+  position: relative;
+  top: -10%;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
