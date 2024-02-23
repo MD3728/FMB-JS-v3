@@ -24,10 +24,10 @@ app.listen(3001, () => {
 //Connect To Database
 let conn = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "",
+  user: "md3728",
+  password: "P509@P509",
   database: "sitedatabase",
-  port: 3307
+  port: 3308
 });
 
 conn.connect(function(err) {

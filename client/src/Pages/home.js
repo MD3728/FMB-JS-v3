@@ -6,7 +6,7 @@ class Home extends Component {
   }
 
   goToCreateAccount(){
-    document.location.href = "http://localhost:3000/createAccount";
+    document.location.href = "http://localhost:3000/create_account";
   }
 
   goToHome(){
@@ -38,24 +38,26 @@ class Home extends Component {
 
           </div>
           <div id = "mainInfoDiv" className = "col-sm-4 middleSection align-items-center justify-content-center">  
-            {/* Unused Property: d-flex */}
+            {/* Introduction */}
             <p id = "descriptionText">
               <strong>
-              Description: <br/>
               FMB is a program designed for<br />
-              test management within groups<br />
+              test management for personal use<br />
+              or in groups. <br />
               </strong>
             </p>      
-            <p id = "recentUpdateText">
-              <strong>Recent Updates: </strong><br />
-              FMB JS 1.1.0 has been released! <br />
-              Check the readme file for changes and new features OR go to https://github.com/MD3728/FMB-JS for the source code
-            </p>
-            <div id = "optionLogin">
+            {/* Middle Prompt */}
+            <div id = "loginDiv" className = "standardBox">
               <input type = "submit" id = "loginButton" value = "Login" onClick = {this.goToLogin} />
               <h2 id = "inBetweenText">OR</h2>
               <input type = "submit" id = "createAccountButton" value = "Create An Account" onClick = {this.goToCreateAccount}/>
             </div>
+            {/* Contains updated messages */}
+            <p id = "recentUpdateText" className='standardBox'>
+              <strong>Recent Updates: </strong><br />
+              FMB JS v3.0.0 has been released! <br />
+              Check the readme file for changes and new features OR go to https://github.com/MD3728/FMB-JS for the source code
+            </p>
           </div>
           <div className = "col-sm-2 middleSection">        
 

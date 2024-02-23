@@ -1,7 +1,6 @@
 /* For home.js */
 
 .middleSection{
-  background-color: rgba(100,100,100,0.15);
   height: 85vh;
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
@@ -28,44 +27,55 @@
   top: 15%;
 }
 
-#recentUpdateText{
-  position: relative;
-  top: 35%;
-  width: 100%;
-  border: 5px solid black;
-  background-color: rgba(201, 235, 223, 0.3);
+/* Introduction */
+#descriptionText{
+  position: absolute;
+  text-align: center;
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  font-size:32px;
 }
 
-#optionLogin{
+/* Login Section */
+#loginDiv{
   text-align: center;
-  top: -15%;
-  position:relative;
+  top: 35%;
+  left: 40%;
+  position:absolute;
+  width: 20%;
+  height: 20%;
 }
 
 #loginButton{
-  position: relative;
+  position: absolute;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  top: -10%;
+  top: 10%;
+  margin-left: -60px;
+  width: 120px;
 }
 
 #createAccountButton{
-  position: relative;
+  position: absolute;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  top: 0%;
-}
-
-#descriptionText{
-  position: relative;
-  text-align: center;
-  top: 10%;
-  width: 100%;
+  top:65%;
+  width: 220px;
+  margin-left: -110px;
 }
 
 #inBetweenText{
-  position: relative;
-  top: -10%;
-  width: 100%;
+  position: absolute;
   text-align: center;
+  top: 35%;
+  width: 100%;
+}
+
+/* Last */
+#recentUpdateText{
+  top: 60%;
+  left: 0%;
+  width: 100%;
+  height: 40%;
 }
 
 

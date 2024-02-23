@@ -21,7 +21,7 @@ class Login extends Component {
   }
 
   goToCreate(){
-    document.location.href = "http://localhost:3000/createAccount";
+    document.location.href = "http://localhost:3000/create_account";
   }
 
   //Update Text Boxes
@@ -66,6 +66,7 @@ class Login extends Component {
     }
   }
 
+  // Returns HTML Page
   render() {
     return (
     <div>
@@ -74,16 +75,19 @@ class Login extends Component {
       <nav className="navbar navbar-expand-sm bg-dark">
         <div className="container-fluid">
           <ul className="navbar-nav" id = "generalNav">
+            <li id = "homeNav" className = "nav-item">
+              <input type = "submit" className = "btn text-light nav-link btn-dark" value = "Home" onClick = {() => {this.goToHome()}} />
+            </li>
             <li id = "loginNav" className = "nav-item">
               <input type = "submit" className = "btn text-light nav-link btn-dark" value = "Login" onClick = {() => {this.goToLogin()}}/>
             </li>
-            <li id = "homeNav" className = "nav-item">
-              <input type = "submit" className = "btn text-light nav-link btn-dark" value = "Home" onClick = {() => {this.goToHome()}} />
+            <li id = "textNav" className = "nav-item">
+              <label value = "FMB v3.0" />
             </li>
           </ul>
         </div>
       </nav>
-      {/*  */}
+      {/* Main Page */}
       <div id = "generalDiv" className = "row">
         <div className = "col-sm-2">        
 
@@ -93,15 +97,18 @@ class Login extends Component {
         </div>
         <div id = "mainInfoDiv" className = "col-sm-4 middleSection "> 
          {/*align-items-center justify-content-center  */}
-          <h1 id = "homepageText">Login Portal</h1>
           <div id = "loginDiv">
-            <h1 id = "loginText">Login</h1>
-            <p id = "usernameText">Username:</p>
-            <p id = "passwordText">Password:</p>
+            <h1 id = "homepageText">Login Portal</h1>            
+            <div id = "usernameInputs">
+              <p id = "usernameText">Username:</p>
+              <input type = "text" name = "username" id = "usernameInput" onChange = {this.changeTextBox} />
+            </div>
+            <div id = "passwordInputs">
+              <p id = "passwordText">Password:</p>
+              <input type = "password" name = "password" id = "passwordInput" onChange = {this.changeTextBox} />
+            </div>
             <input type = "submit" name = "login" id = "loginButton" value = "Login" onClick = {this.loginAccount} />
-            <input type = "text" name = "username" id = "usernameInput" onChange = {this.changeTextBox} />
-            <input type = "password" name = "password" id = "passwordInput"  onChange = {this.changeTextBox} />
-            <input type = "submit" id = "createAccountButton" value = "Create New Account" onClick = {() => {this.goToCreate()}} />
+            <input type = "submit" id = "createAccountButton" value = "Create Account" onClick = {() => {this.goToCreate()}} />
           </div>
         </div>
         <div className = "col-sm-2 middleSection">        
@@ -111,7 +118,19 @@ class Login extends Component {
 
         </div>
       </div>
-
+      {/* Footer */}
+      <nav className="navbar navbar-expand-sm bg-dark" id = "footerContainer">
+        <div className="container-fluid">
+          <ul className="navbar-nav" id = "generalNav">
+            <li id = "textNav" className = "nav-item">
+              <label value = "Test Label" className = "titleBUtton"/>
+            </li>
+            <li id = "textNav" className = "nav-item">
+              <label value = "Test Label" className = "titleBUtton"/>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     );
   }
