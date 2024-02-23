@@ -94,7 +94,7 @@ class Login extends Component {
         </div>
         <div id = "mainInfoDiv" className = "col-sm-4 middleSection "> 
          {/*align-items-center justify-content-center  */}
-          <div id = "loginDiv">
+          <div id = "loginDiv" className='standardBox'>
             <h1 id = "homepageText">Login Portal</h1>            
             <div id = "usernameInputs">
               <p id = "usernameText">Username:</p>
